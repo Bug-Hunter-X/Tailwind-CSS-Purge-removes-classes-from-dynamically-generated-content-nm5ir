@@ -1,0 +1,1 @@
+The issue is that Tailwind's purge process might be accidentally removing classes used only in dynamically generated content. If the content is generated after the HTML is compiled, PurgeCSS (the tool Tailwind uses) won't see these classes and will remove them from the final CSS output, leading to missing styles.
